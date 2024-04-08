@@ -1,13 +1,130 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "var(--font)";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  overscroll-behavior-y: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  overscroll-behavior-y: none;
+  font-optical-sizing: auto;
+}
+
+.MuiTypography-root,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "var(--font)" !important; */
+}
+
+:root {
+  /* --font: "Jost",
+    sans-serif; */
+  --font: "Jost", sans-serif;
+  --primary: #0D5EF4;
+  --secondary: #0F2239;
+  --tertiary: #000000;
+  --white: #ffffff;
+  --text-color: #4D5765;
+  
+
+}
+
+.container {
+
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media only screen and (min-width: 106.25rem) {
+  .container {
+    max-width: 1710px;
+  }
+}
+
+@media only screen and (min-width: 87.5rem) {
+  .container {
+    /* max-width: 1710px; */
+  }
+}
+
+@media only screen and (min-width: 75rem) {
+  .container {
+    /* max-width: 1710px; */
+  }
+}
+
+@media only screen and (min-width: 62rem) {
+  .container {
+    /* max-width: 1710px; */
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .container {
+    /* max-width: 1710px; */
+  }
+}
+
+@media only screen and (min-width: 36rem) {
+  .container {
+    /* max-width: 1710px; */
+  }
+}
+
+
+/* "@media(min-Width: 87.5rem)": {}
+
+   ,
+   "@media(min-Width: 81.25rem)": {}
+
+   ,
+   "@media(min-Width: 75rem)": {}
+
+   ,
+   "@media(min-Width: 62rem)": {}
+
+   ,
+   "@media(min-Width: 48rem)": {}
+
+   ,
+   "@media(min-Width: 36rem)": {} */
+
+
+
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
